@@ -73,10 +73,10 @@ export default function Home() {
             <a href="https://twitter.com/gelzaragoza" target="_blank">
               <AiFillTwitterCircle />
             </a>
-            <a href="https://www.linkedin.com/in/angelica-zaragoza/"target="_blank">
+            <a href="https://www.linkedin.com/in/angelica-zaragoza/" target="_blank">
               <AiFillLinkedin />
             </a>
-            <a href="https://github.com/gelzaragoza"target="_blank">
+            <a href="https://github.com/gelzaragoza" target="_blank">
               <AiFillGithub />
             </a>
           </div>
@@ -88,52 +88,7 @@ export default function Home() {
               Throughout my journey in the tech industry, I have honed the skills to provide professional services for agencies and startups that encompass compelling design, seamless web development, and effective digital marketing. I specialize in crafting visually appealing designs, developing user-friendly websites, and curating engaging content for social media platforms.
             </p>
           </div>
-          <section>
-            <div className=" pb-20">
-              <p className="text-lg py-2 leading-8 dark:text-white">
-                Some of the technologies I&lsquo;ve used include but not limited to the following:
-              </p>
-              <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2">
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">NextJS</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">React</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">JavaScript</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">HTML/CSS</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">MUI</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">Tailwind</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">Git</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">Azure DevOps</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">Figma</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">WebFlow</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">Canva</h4>
-                </div>
-                <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">Adobe Creative Cloud</h4>
-                </div>
-              </div>
-            </div>
-          </section>
-          <div className="lg:flex gap-10">
+          <div className="lg:flex gap-10 py-20">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <div className="flex justify-center">
                 <Image src={design} width={100} height={100} />
@@ -142,14 +97,26 @@ export default function Home() {
                 Beautiful Designs
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
+                Creating seamless and elegant designs suited for your needs following core
                 design theory.
               </p>
-              <h4 className="py-4 font-semibold text-rose-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2 justify-center">
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Figma</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Photoshop</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Illustrator</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Canva</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">WebFlow</h4>
+                </div>
+              </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <div className="flex justify-center">
@@ -162,11 +129,38 @@ export default function Home() {
                 Do you have an idea for your next great website? Let&lsquo;s make it a
                 reality.
               </p>
-              <h4 className="py-4 font-semibold text-rose-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2 justify-center">
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">React</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">NextJS</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Tailwind</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Javascript</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">HTML/CSS</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">MongoDB</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">NodeJS</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">MUI</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Git</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Azure DevOps</h4>
+                </div>
+              </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <div className="flex justify-center">
@@ -179,11 +173,26 @@ export default function Home() {
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
               </p>
-              <h4 className="py-4 font-semibold text-rose-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2 justify-center">
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Meta Business Suite</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Hubspot</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Buffer</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Adobe Creative Cloud</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">Google Apps for Business</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">TweetDeck</h4>
+                </div>
+              </div>
             </div>
           </div>
         </section>
