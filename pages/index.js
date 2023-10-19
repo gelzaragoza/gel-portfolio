@@ -56,42 +56,51 @@ export default function Home() {
             <h3 className=" text-2xl text-rose-600 py-2 md:text-3xl">
               Frontend Designer{" "}
               <span role="img" aria-label="wave">
-              👋
+                👋
               </span>
             </h3>
             <p className=" text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
-              Hello world! I'm Gel, a passionate Frontend Developer and UX Designer who aspires to continously learn software and design tools
+              Hello world! I&lsquo;m Gel, a passionate Frontend Developer and UX Designer who aspires to continously learn software and design tools &apos;
               in order to make the web more usable one page at a time.
               <p className="py-5">Dive into my tech journey below! </p>
             </p>
           </div>
-          <div className=" text-5xl flex  justify-center gap-16 py-3 dark:text-rose-600">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillGithub />
+          <div className="text-5xl flex justify-center gap-16 py-3 dark:text-rose-600">
+            <a href="https://twitter.com/gelzaragoza">
+              <AiFillTwitterCircle />
+            </a>
+            <a href="https://www.linkedin.com/in/angelica-zaragoza/">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/gelzaragoza">
+              <AiFillGithub />
+            </a>
           </div>
         </section>
         <section>
           <div>
             <h3 className=" text-rose-500 text-3xl py-1 pt-5">Services I Offer</h3>
-            <p className=" text-md py-2 leading-8  dark:text-white">
+            <p className=" text-lg py-2 leading-8  dark:text-white">
               Throughout my journey in the tech industry, I have honed the skills to provide professional services for agencies and startups that encompass compelling design, seamless web development, and effective digital marketing. I specialize in crafting visually appealing designs, developing user-friendly websites, and curating engaging content for social media platforms.
             </p>
           </div>
           <section>
             <div className=" pb-20">
-              <p className="text-md py-2 leading-8 dark:text-white">
-                Some of the technologies I've used include but not limited to the following:
+              <p className="text-lg py-2 leading-8 dark:text-white">
+                Some of the technologies I&lsquo;ve used include but not limited to the following:
               </p>
-              <div className="flex flex-wrap gap-4 dark:text-white">
+              <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2">
                 <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">HTML/CSS</h4>
+                  <h4 className="text-lg font-mono dark:text-rose-600">NextJS</h4>
+                </div>
+                <div className="dark:bg-white rounded-md p-2 shadow-md">
+                  <h4 className="text-lg font-mono dark:text-rose-600">React</h4>
                 </div>
                 <div className="dark:bg-white rounded-md p-2 shadow-md">
                   <h4 className="text-lg font-mono dark:text-rose-600">JavaScript</h4>
                 </div>
                 <div className="dark:bg-white rounded-md p-2 shadow-md">
-                  <h4 className="text-lg font-mono dark:text-rose-600">React</h4>
+                  <h4 className="text-lg font-mono dark:text-rose-600">HTML/CSS</h4>
                 </div>
                 <div className="dark:bg-white rounded-md p-2 shadow-md">
                   <h4 className="text-lg font-mono dark:text-rose-600">MUI</h4>
@@ -125,7 +134,7 @@ export default function Home() {
               <div className="flex justify-center">
                 <Image src={design} width={100} height={100} />
               </div>
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
+              <h3 className=" dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
                 Beautiful Designs
               </h3>
               <p className="py-2">
@@ -142,11 +151,11 @@ export default function Home() {
               <div className="flex justify-center">
                 <Image src={code} width={100} height={100} />
               </div>
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+              <h3 className=" dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
+                Do you have an idea for your next great website? Let&lsquo;s make it a
                 reality.
               </p>
               <h4 className="py-4 font-semibold text-rose-600">Design Tools I Use</h4>
@@ -158,7 +167,10 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <div className="flex justify-center">
                 <Image src={consulting} width={100} height={100} />
-              </div>              <h3 className="text-lg font-medium pt-8 pb-2 ">Marketing</h3>
+              </div>
+              <h3 className=" dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
+                Marketing
+              </h3>
               <p className="py-2">
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
@@ -174,7 +186,7 @@ export default function Home() {
         <section>
           <div>
             <h3 className=" text-rose-500 text-3xl py-1 pt-5">Portfolio</h3>
-            <p className=" text-md py-2 leading-8  dark:text-white">
+            <p className=" text-lg py-2 leading-8  dark:text-white">
               Welcome to my digital gallery, where creativity meets innovation. Explore a curated collection of my finest work, showcasing the blend of design and technology that fuels my passion. Each project is a testament to my dedication to creating seamless user experiences and visually stunning designs. Join me on this visual journey through my portfolio – a testament to my love for design and technology!            </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
