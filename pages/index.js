@@ -41,9 +41,13 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className=" bg-black text-white px-4 py-2 rounded-md ml-8"
-                  href="#">
-                  Resume
+                  className="bg-black text-white px-4 py-2 rounded-md ml-8"
+                  href="https://drive.google.com/file/d/1geGdi2LsdG-MwBbhGUT7yf6oifB_Y-gX/view?usp=sharing" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  download="AngelicaResume.pdf" 
+                >
+                  Download Resume
                 </a>
               </li>
             </ul>
