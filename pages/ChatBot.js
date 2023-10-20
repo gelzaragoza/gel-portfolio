@@ -18,7 +18,7 @@ const ChatBot = () => {
         <div>
           <div className="p-4">
             <h3 className="text-2xl font-semibold mb-2">Get in Touch</h3>
-            <p className="text-sm mb-3">Ready to bring your vision to life? Let's talk and make it happen!</p>
+            <p className="text-sm mb-3">Ready to bring your vision to life? Let&apos;s talk and make it happen!</p>
 
             <div className="mt-4">
               <form>
