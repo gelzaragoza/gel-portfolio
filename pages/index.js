@@ -110,8 +110,8 @@ export default function Home() {
           </section>
           <section>
             <div>
-              <h3 className=" text-rose-500 text-3xl py-1 pt-5 font-semibold">
-                Services I Offer
+              <h3 className=" text-rose-500 text-3xl py-1 pt-5 font-mono font-bold">
+                SERVICES I OFFER
               </h3>
               <p className=" text-lg py-2 leading-8  dark:text-white">
                 Throughout my journey in the tech industry, I have honed the
@@ -290,7 +290,7 @@ export default function Home() {
           </section>
           <section>
             <div>
-              <h3 className=" text-rose-500 text-3xl py-1 pt-5 font-semibold">Portfolio</h3>
+              <h3 className=" text-rose-500 text-3xl py-1 pt-5 font-mono font-bold">PORTFOLIO</h3>
               <p className=" text-lg py-2 leading-8  dark:text-white">
                 Welcome to my digital gallery, where creativity meets
                 innovation. Explore a curated collection of my finest work,
