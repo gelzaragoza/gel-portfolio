@@ -29,19 +29,19 @@ export default function Home() {
       </Head>
 
       <main className=" bg-white px-10 dark:bg-black md:px-20 lg:px-40">
-        <section className=" min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
+        <section className=" min-h-screen m">
+          <nav className="py-10 mb-12 flex justify-between dark:text-white flex-wrap gap-5">
             <h1 className=" text-xl font-mono" >gelzaragoza</h1>
-            <ul className=" flex items-center">
+            <ul className=" flex justify-end items-center">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl"
                 />
               </li>
               <li>
                 <a
-                  className="bg-black text-white px-4 py-2 rounded-md ml-8 sm:px-2 sm:py-1"
+                  className=" dark:text-black dark:bg-white bg-black font-semibold text-white px-4 py-2 border-none rounded-md ml-8 block whitespace-nowrap"
                   href="https://drive.google.com/u/0/uc?id=1geGdi2LsdG-MwBbhGUT7yf6oifB_Y-gX&export=download"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className=" text-center p-10">
-            <div className="relative bg-black rounded-full mx-auto w-80 h-80 mb-10 overflow-hidden md:h-96 md:w-96">
+          <div className="relative bg-black rounded-full mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
               <Image
                 src={gelyace}
                 layout="fill"
