@@ -31,7 +31,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-black md:px-20 lg:px-40">
         <section className=" min-h-screen m">
           <nav className="py-10 mb-12 flex justify-between dark:text-white flex-wrap gap-5">
-            <h1 className=" text-xl font-mono" >gelzaragoza</h1>
+            <h1 className="  text-lg font-mono" >gelzaragoza</h1>
             <ul className=" flex justify-end items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -103,7 +103,7 @@ export default function Home() {
                   alt="Design Image Description"
                 />
               </div>
-              <h3 className=" dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
+              <h3 className="text-rose-600 dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
                 Beautiful Designs
               </h3>
               <p className="py-2">
@@ -137,7 +137,7 @@ export default function Home() {
                   alt="Code Image Description"
                 />
               </div>
-              <h3 className=" dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
+              <h3 className=" text-rose-600 dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
                 Code your dream project
               </h3>
               <p className="py-2">
@@ -186,7 +186,7 @@ export default function Home() {
                   alt="Consulting Image Description"
                 />
               </div>
-              <h3 className=" dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
+              <h3 className="text-rose-600 dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
                 Marketing
               </h3>
               <p className="py-2">
