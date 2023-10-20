@@ -41,11 +41,11 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-black text-white px-4 py-2 rounded-md ml-8"
-                  href="https://drive.google.com/u/0/uc?id=1geGdi2LsdG-MwBbhGUT7yf6oifB_Y-gX&export=download" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  download="AngelicaResume.pdf" 
+                  className="bg-black text-white px-4 py-2 rounded-md ml-8 sm:px-2 sm:py-1"
+                  href="https://drive.google.com/u/0/uc?id=1geGdi2LsdG-MwBbhGUT7yf6oifB_Y-gX&export=download"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="AngelicaResume.pdf"
                 >
                   Download Resume
                 </a>
