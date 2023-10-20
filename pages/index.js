@@ -18,6 +18,7 @@ import web3 from "../public/web3.svg";
 import web4 from "../public/web1.svg";
 import web5 from "../public/Home.svg";
 import web6 from "../public/hatchitlol.png";
+import ChatBot from "./ChatBot";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -396,6 +397,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <ChatBot />
       </main>
     </div>
   );
