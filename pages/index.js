@@ -31,7 +31,7 @@ export default function Home() {
       </Head>
 
       <main className=" bg-white dark:bg-black">
-        <div className="px-10 md:px-20 lg:px-40">
+        <div className="px-10 md:px-20 lg:px-20">
           <section className=" min-h-screen m">
             <nav className="py-10 mb-12 flex justify-between dark:text-white flex-wrap gap-5">
               <h1 className="  text-lg font-mono">gelzaragoza</h1>
@@ -76,29 +76,41 @@ export default function Home() {
               <p className=" text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
                 Hello world! I&lsquo;m Gel, a passionate Frontend Developer and
                 UX Designer who aspires to continously learn software and design
-                tools &apos; in order to make the web more usable one page at a
-                time.
+                tools in order to make the web more usable one page at a time.
                 <p className="py-5">Dive into my tech journey below! </p>
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 dark:text-rose-600">
-              <a href="https://twitter.com/gelzaragoza" target="_blank">
-                <AiFillTwitterCircle />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/angelica-zaragoza/"
-                target="_blank"
-              >
-                <AiFillLinkedin />
-              </a>
-              <a href="https://github.com/gelzaragoza" target="_blank">
-                <AiFillGithub />
-              </a>
+              <div className="text-5xl flex justify-center gap-16 py-3 dark:text-rose-600">
+                <div className="text-5xl flex justify-center gap-16 py-3 dark:text-rose-600">
+                  <a
+                    href="https://twitter.com/gelzaragoza"
+                    target="_blank"
+                    className="hover:text-red-500"
+                  >
+                    <AiFillTwitterCircle />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/angelica-zaragoza/"
+                    target="_blank"
+                    className="hover:text-red-500"
+                  >
+                    <AiFillLinkedin />
+                  </a>
+                  <a
+                    href="https://github.com/gelzaragoza"
+                    target="_blank"
+                    className="hover:text-red-500"
+                  >
+                    <AiFillGithub />
+                  </a>
+                </div>
+              </div>
             </div>
           </section>
           <section>
             <div>
-              <h3 className=" text-rose-500 text-3xl py-1 pt-5">
+              <h3 className=" text-rose-500 text-3xl py-1 pt-5 font-semibold">
                 Services I Offer
               </h3>
               <p className=" text-lg py-2 leading-8  dark:text-white">
@@ -278,14 +290,14 @@ export default function Home() {
           </section>
           <section>
             <div>
-              <h3 className=" text-rose-500 text-3xl py-1 pt-5">Portfolio</h3>
+              <h3 className=" text-rose-500 text-3xl py-1 pt-5 font-semibold">Portfolio</h3>
               <p className=" text-lg py-2 leading-8  dark:text-white">
                 Welcome to my digital gallery, where creativity meets
                 innovation. Explore a curated collection of my finest work,
                 showcasing the blend of design and technology that fuels my
                 passion. Each project is a testament to my dedication to
                 creating seamless user experiences and visually stunning
-                designs. Join me on this visual journey through my portfolio – a
+                designs. Join me on this visual journey through my portfolio a
                 testament to my love for design and technology!{" "}
               </p>
             </div>
