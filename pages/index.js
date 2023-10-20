@@ -47,7 +47,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   download="AngelicaResume.pdf"
                 >
-                  Download Resume
+                  Resume
                 </a>
               </li>
             </ul>
