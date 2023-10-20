@@ -42,7 +42,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-black text-white px-4 py-2 rounded-md ml-8"
-                  href="https://drive.google.com/file/d/1geGdi2LsdG-MwBbhGUT7yf6oifB_Y-gX/view?usp=sharing" 
+                  href="https://drive.google.com/u/0/uc?id=1geGdi2LsdG-MwBbhGUT7yf6oifB_Y-gX&export=download" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   download="AngelicaResume.pdf" 
