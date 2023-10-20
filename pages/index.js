@@ -53,7 +53,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className=" text-center p-10">
-          <div className="relative bg-black rounded-full mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
+            <div className="relative bg-black rounded-full mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
               <Image
                 src={gelyace}
                 layout="fill"
@@ -289,6 +289,20 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+        </section>
+        <section className="bg-rose-500 text-white py-10">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl font-semibold mb-4">Wanna work with me?</h2>
+            <p className="text-lg">
+              Feel free to contact me for any inquiries or collaborations.
+            </p>
+            <a
+              href="mailto:mangelicazaragoza@gmail.com"
+              className="mt-6 inline-block px-6 py-3 bg-white text-rose-500 rounded-md hover:bg-rose-400 hover:text-white font-semibold"
+            >
+              Contact Me
+            </a>
           </div>
         </section>
       </main>
