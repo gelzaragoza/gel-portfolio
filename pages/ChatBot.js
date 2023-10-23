@@ -66,9 +66,9 @@ const ChatBot = () => {
                   {" "}
                   <button
                     type="submit"
-                    className="bg-black text-white py-2 px-4 rounded hover:bg-rose-400 text-lg"
+                    className=" bg-white text-rose-800 py-2 px-4 rounded hover:bg-rose-400 text-lg"
                   >
-                    Send <AiOutlineSend className="inline-block text-xl ml-2" />{" "}
+                    Send <AiOutlineSend className="inline-block text-xl ml-1" />{" "}
                   </button>
                 </div>
               </form>
