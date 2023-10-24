@@ -8,7 +8,7 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import Image from "next/image";
-import gelyace from "../public/gel-notion.svg";
+import gelyace from "../public/gel-notion2.svg";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
@@ -57,7 +57,7 @@ export default function Home() {
               </ul>
             </nav>
             <div className=" text-center p-10">
-              <div className="relative bg-black rounded-full mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
+              <div className="relative bg-transparent rounded-full dark:bg-white mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
                 <Image
                   src={gelyace}
                   layout="fill"
