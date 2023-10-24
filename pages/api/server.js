@@ -1,5 +1,6 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -15,9 +16,10 @@ const transporter = nodemailer.createTransport({
 
 // Middleware to parse JSON in POST requests
 app.use(express.json());
+app.use(cors()); // Enable CORS for all routes
 
 // Define a POST route for sending emails
-app.post('/send-email', (req, res) => {
+app.post('/api/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
   const mailOptions = {
