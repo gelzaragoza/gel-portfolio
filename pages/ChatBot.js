@@ -15,7 +15,7 @@ const ChatBot = () => {
     e.preventDefault();
 
     // Send form data to your server for email sending
-    fetch("/send-email", {
+    fetch("/api/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,15 +45,19 @@ const ChatBot = () => {
       {isOpen ? (
         <div>
           <div className="p-4">
-            <h3 className="text-2xl font-semibold mb-2">Get in Touch</h3>
+            <h3 className="text-2xl font-semibold mb-2">Get in Touch!</h3>
             <p className="text-sm mb-3">
-              Ready to bring your vision to life? Let&apos;s talk and make it happen!
+              Ready to bring your vision to life? Let&apos;s talk and make it
+              happen!
             </p>
 
             <div className="mt-4">
               <form onSubmit={handleFormSubmit}>
                 <div className="mb-2">
-                  <label htmlFor="name" className="block text-sm font-semibold text-white">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-semibold text-white"
+                  >
                     Name:
                   </label>
                   <input
@@ -65,7 +69,10 @@ const ChatBot = () => {
                   />
                 </div>
                 <div className="mb-2">
-                  <label htmlFor="email" className="block text-sm font-semibold text-white">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-semibold text-white"
+                  >
                     Email:
                   </label>
                   <input
@@ -77,7 +84,10 @@ const ChatBot = () => {
                   />
                 </div>
                 <div className="mb-2">
-                  <label htmlFor="message" className="block text-sm font-semibold text-white">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-semibold text-white"
+                  >
                     Message:
                   </label>
                   <textarea
@@ -92,7 +102,7 @@ const ChatBot = () => {
                 <div className="mb-2 text-center">
                   <button
                     type="submit"
-                    className="bg-white text-rose-800 py-2 px-4 rounded hover:bg-rose-400 text-lg"
+                    className="bg-white text-rose-500 py-2 px-4 rounded hover:bg-rose-400 text-lg font-semibold"
                   >
                     Send <AiOutlineSend className="inline-block text-xl ml-1" />{" "}
                   </button>
@@ -109,8 +119,10 @@ const ChatBot = () => {
           </button>
         </div>
       ) : (
-        <div className="text-center cursor-pointer" onClick={toggleChat}>
-          <AiOutlineMessage className="text-3xl" />
+        <div className="cursor-pointer" onClick={toggleChat}>
+          <div className="text-center">
+            <AiOutlineMessage className="text-3xl" />
+          </div>
         </div>
       )}
     </div>
