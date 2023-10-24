@@ -10,12 +10,12 @@ const ChatBot = () => {
   const toggleChat = () => {
     setIsOpen(!isOpen);
   };
-
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
     // Send form data to your server for email sending
-    fetch("/api/send-email", {
+    fetch("https://gelzaragoza.vercel.app/api/send-email", {
+      // Updated URL here
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +26,6 @@ const ChatBot = () => {
       .then((data) => {
         if (data.success) {
           alert("Email sent successfully!");
-          // Optionally, you can reset the form fields here
           setName("");
           setEmail("");
           setMessage("");
