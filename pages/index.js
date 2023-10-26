@@ -69,15 +69,15 @@ export default function Home() {
                 Angelica Zaragoza
               </h2>
               <h3 className=" text-2xl text-rose-600 py-2 md:text-3xl">
-                Frontend Designer{" "}
+                Web Designer & Digital Marketer{" "}
                 <span role="img" aria-label="wave">
                   👋
                 </span>
               </h3>
               <p className=" text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
-                Hello world! I&lsquo;m Gel, a passionate Frontend Developer and
-                UX Designer who aspires to continously learn software and design
-                tools in order to make the web more usable one page at a time.
+                Hello world! I&lsquo;m Gel, a passionate Web Designer and
+                Digital Marketer who aspires to continously learn software and design
+                tools in order to enhance the web's usability one page at a time.
                 <p className="py-5">Dive into my tech journey below! </p>
               </p>
             </div>
