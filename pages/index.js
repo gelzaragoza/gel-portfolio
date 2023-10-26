@@ -77,7 +77,7 @@ export default function Home() {
               <p className=" text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
                 Hello world! I&lsquo;m Gel, a passionate Web Designer and
                 Digital Marketer who aspires to continously learn software and design
-                tools in order to enhance the web's usability one page at a time.
+                tools in order to enhance the web&lsquo;s usability one page at a time.
                 <p className="py-5">Dive into my tech journey below! </p>
               </p>
             </div>
