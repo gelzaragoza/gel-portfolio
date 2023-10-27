@@ -172,6 +172,55 @@ export default function Home() {
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                 <div className="flex justify-center">
                   <Image
+                    src={consulting}
+                    width={100}
+                    height={100}
+                    alt="Consulting Image Description"
+                  />
+                </div>
+                <h3 className="text-rose-600 dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
+                  Marketing
+                </h3>
+                <p className="py-2">
+                  Are you interested in feedback for your current project? I can
+                  give you tips and tricks to level it up.
+                </p>
+                <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2 justify-center">
+                  <div className="dark:bg-white rounded-md p-2 shadow-md">
+                    <h4 className="text-lg font-mono dark:text-rose-600">
+                      Meta Business Suite
+                    </h4>
+                  </div>
+                  <div className="dark:bg-white rounded-md p-2 shadow-md">
+                    <h4 className="text-lg font-mono dark:text-rose-600">
+                      Hubspot
+                    </h4>
+                  </div>
+                  <div className="dark:bg-white rounded-md p-2 shadow-md">
+                    <h4 className="text-lg font-mono dark:text-rose-600">
+                      Buffer
+                    </h4>
+                  </div>
+                  <div className="dark:bg-white rounded-md p-2 shadow-md">
+                    <h4 className="text-lg font-mono dark:text-rose-600">
+                      Adobe Creative Cloud
+                    </h4>
+                  </div>
+                  <div className="dark:bg-white rounded-md p-2 shadow-md">
+                    <h4 className="text-lg font-mono dark:text-rose-600">
+                      Google Apps for Business
+                    </h4>
+                  </div>
+                  <div className="dark:bg-white rounded-md p-2 shadow-md">
+                    <h4 className="text-lg font-mono dark:text-rose-600">
+                      TweetDeck
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+                <div className="flex justify-center">
+                  <Image
                     src={code}
                     width={100}
                     height={100}
@@ -234,55 +283,6 @@ export default function Home() {
                   <div className="dark:bg-white rounded-md p-2 shadow-md">
                     <h4 className="text-lg font-mono dark:text-rose-600">
                       Azure DevOps
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <div className="flex justify-center">
-                  <Image
-                    src={consulting}
-                    width={100}
-                    height={100}
-                    alt="Consulting Image Description"
-                  />
-                </div>
-                <h3 className="text-rose-600 dark:text-rose-600 text-2xl font-semibold pt-8 pb-2  ">
-                  Marketing
-                </h3>
-                <p className="py-2">
-                  Are you interested in feedback for your current project? I can
-                  give you tips and tricks to level it up.
-                </p>
-                <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2 justify-center">
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Meta Business Suite
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Hubspot
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Buffer
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Adobe Creative Cloud
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Google Apps for Business
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      TweetDeck
                     </h4>
                   </div>
                 </div>
