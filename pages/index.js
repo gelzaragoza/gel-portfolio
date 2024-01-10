@@ -77,7 +77,7 @@ export default function Home() {
               <p className=" text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
                 Hello world! I&lsquo;m Gel, a passionate Web Designer and
                 Digital Marketer who aspires to continously learn software and design
-                tools in order to enhance the web&lsquo;s usability one page at a time.
+                tools to enhance the web&lsquo;s usability one page at a time.
                 <p className="py-5">Dive into my tech journey below! </p>
               </p>
             </div>
@@ -138,8 +138,7 @@ export default function Home() {
                   Beautiful Designs
                 </h3>
                 <p className="py-2">
-                  Creating seamless and elegant designs suited for your needs
-                  following core design theory.
+                 Crafting seamless and elegant designs suited to meet your specific requirements, following core design principles.
                 </p>
                 <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2 justify-center">
                   <div className="dark:bg-white rounded-md p-2 shadow-md">
@@ -293,13 +292,7 @@ export default function Home() {
             <div>
               <h3 className=" text-rose-500 text-3xl py-1 pt-5 font-mono font-bold">PORTFOLIO</h3>
               <p className=" text-lg py-2 leading-8  dark:text-white">
-                Welcome to my digital gallery, where creativity meets
-                innovation. Explore a curated collection of my finest work,
-                showcasing the blend of design and technology that fuels my
-                passion. Each project is a testament to my dedication to
-                creating seamless user experiences and visually stunning
-                designs. Join me on this visual journey through my portfolio a
-                testament to my love for design and technology!{" "}
+              Welcome to my digital gallery! Explore a curated collection showcasing the seamless blend of design and technology that fuels my passion. Each project is a testament to my dedication to creating visually stunning designs and seamless user experiences. Join me on this visual journey through my portfolio, a testament to my love for design and technology!{" "}
               </p>
             </div>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
