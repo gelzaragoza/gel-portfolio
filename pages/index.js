@@ -46,7 +46,7 @@ export default function Home() {
                 <li>
                   <a
                     className=" dark:text-black dark:bg-white bg-black font-semibold text-white  hover:bg-rose-400 hover:text-white px-4 py-2 border-none rounded-md ml-8 block whitespace-nowrap"
-                    href="https://drive.google.com/uc?id=14yeopBlrZnUeB2aIFnq1Be0dWJNsUmEI&export=download"
+                    href="https://drive.google.com/file/d/11ZNdkU5arm7eL8159Pf6jCdiOi5Ii6Nn/view"
                     target="_blank"
                     rel="noopener noreferrer"
                     download="AngelicaResume.pdf"
