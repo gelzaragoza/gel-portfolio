@@ -69,33 +69,7 @@ export default function Home() {
                       Resume
                     </a>
                 </div>
-                <div className="flex items-center gap-3">
-                  <a
-                    href="https://twitter.com/gelzaragoza"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white"
-                  >
-                    <AiFillTwitterCircle className="text-2xl" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/angelica-zaragoza/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white"
-                  >
-                    <AiFillLinkedin className="text-2xl" />
-                  </a>
-                  <a
-                    href="https://www.facebook.com/zaragozagel"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white"
-                  >
-                    <AiFillFacebook className="text-2xl" />
-                  </a>
-                  {/* Add more social media icons here */}
-                </div>
+                
               </div>
             </nav>
 
@@ -125,32 +99,39 @@ export default function Home() {
               <p className="text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
                 Dive into my tech journey below! </p>
             </div>
-            <div className="text-5xl flex justify-center gap-16 py-3 dark:text-rose-600">
-              <div className="text-5xl flex justify-center gap-16 py-3 dark:text-rose-600">
-                <div className="text-5xl flex justify-center gap-16 py-3 dark:text-rose-600">
-                  <a
-                    href="https://twitter.com/gelzaragoza"
-                    target="_blank"
-                    className="hover:text-red-500"
-                  >
-                    <AiFillTwitterCircle />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/angelica-zaragoza/"
-                    target="_blank"
-                    className="hover:text-red-500"
-                  >
-                    <AiFillLinkedin />
-                  </a>
-                  <a
-                    href="https://github.com/gelzaragoza"
-                    target="_blank"
-                    className="hover:text-red-500"
-                  >
-                    <AiFillGithub />
-                  </a>
-                </div>
-              </div>
+            <div className="flex justify-center gap-16 py-3 dark:text-rose-600">
+              <a
+                href="https://twitter.com/gelzaragoza"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-red-500"
+              >
+                <AiFillTwitterCircle className="text-5xl" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/angelica-zaragoza/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-red-500"
+              >
+                <AiFillLinkedin className="text-5xl" />
+              </a>
+              <a
+                href="https://github.com/gelzaragoza"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-red-500"
+              >
+                <AiFillGithub className="text-5xl" />
+              </a>
+              <a
+                href="https://facebook.com/zaragozagel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-red-500"
+              >
+                <AiFillFacebook className="text-5xl" />
+              </a>
             </div>
           </section>
           <section>
