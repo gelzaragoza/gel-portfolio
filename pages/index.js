@@ -23,6 +23,8 @@ import ChatBot from "./ChatBot";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
+  
+
   return (
     <div className={darkMode ? "dark" : ""}>
      <Head>
@@ -46,28 +48,27 @@ export default function Home() {
       <main className=" bg-white dark:bg-black">
         <div className="px-10 md:px-20 lg:px-20">
           <section className=" min-h-screen m">
-            <nav className="py-10 mb-12 flex justify-between dark:text-white flex-wrap gap-5">
-              <h1 className="  text-lg font-mono">gelzaragoza</h1>
-              <ul className=" flex justify-end items-center">
-                <li>
-                  <BsFillMoonStarsFill
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl"
-                  />
-                </li>
-                <li>
-                  <a
-                    className=" dark:text-black dark:bg-white bg-black font-semibold text-white  hover:bg-rose-400 hover:text-white px-4 py-2 border-none rounded-md ml-8 block whitespace-nowrap"
-                    href="https://drive.google.com/file/d/11ZNdkU5arm7eL8159Pf6jCdiOi5Ii6Nn/view"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download="AngelicaResume.pdf"
-                  >
-                    Resume
-                  </a>
-                </li>
-              </ul>
-            </nav>
+          <nav className="py-10 flex justify-between items-center">
+            <h1 className="text-lg font-mono text-rose-500">gelzaragoza</h1>
+            <div className="flex items-center gap-5">
+              <button
+                onClick={() => setDarkMode(!darkMode)}
+                className="text-lg text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white focus:outline-none"
+              >
+                <BsFillMoonStarsFill />
+              </button>
+              <a
+                href="https://drive.google.com/file/d/11ZNdkU5arm7eL8159Pf6jCdiOi5Ii6Nn/view"
+                target="_blank"
+                rel="noopener noreferrer"
+                download="AngelicaResume.pdf"
+                className="text-lg font-semibold text-white bg-rose-500 hover:bg-rose-400 px-4 py-2 rounded-md"
+              >
+                Resume
+              </a>
+            </div>
+          </nav>
+
             <div className="text-center p-10">
               <div className="relative bg-transparent rounded-full dark:bg-white mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
                 <Image
@@ -152,32 +153,25 @@ export default function Home() {
                 <p className="py-2">
                   Crafting seamless and elegant designs suited to meet your specific requirements, following core design principles.
                 </p>
-                <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2 justify-center">
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Figma
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Photoshop
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Illustrator
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Canva
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      WebFlow
-                    </h4>
-                  </div>
+                <div className="flex flex-wrap justify-center">
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Figma
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Photoshop
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Illustrator
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Canva
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Webflow
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Figma
+                  </span>
                 </div>
               </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -196,37 +190,25 @@ export default function Home() {
                   Are you interested in feedback for your current project? I can
                   give you tips and tricks to level it up.
                 </p>
-                <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2 justify-center">
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Meta Business Suite
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Hubspot
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Buffer
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Adobe Creative Cloud
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Google Apps for Business
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      TweetDeck
-                    </h4>
-                  </div>
+                <div className="flex flex-wrap justify-center">
+                <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Meta Business Suite
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Hubspot
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Buffer
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Adobe Creative Cloud
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Google Apps for Business
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    TweetDeck
+                  </span>
                 </div>
               </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -245,134 +227,100 @@ export default function Home() {
                   Do you have an idea for your next great website? Let&lsquo;s
                   make it a reality.
                 </p>
-                <div className="flex flex-wrap gap-4 dark:text-white text-rose-600 py-2 justify-center">
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      React
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      NextJS
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Tailwind
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Javascript
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      HTML/CSS
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      MongoDB
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      NodeJS
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      MUI
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Git
-                    </h4>
-                  </div>
-                  <div className="dark:bg-white rounded-md p-2 shadow-md">
-                    <h4 className="text-lg font-mono dark:text-rose-600">
-                      Azure DevOps
-                    </h4>
-                  </div>
+                <div className="flex flex-wrap justify-center">
+                <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    React
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    NextJS
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Tailwind
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    HTML/CSS
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    MongoDB
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    NodeJS
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    MUI
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Git
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Azure DevOps
+                  </span>
                 </div>
               </div>
             </div>
           </section>
-          <section>
-            <div>
+          <section className="py-20">
+          <div>
               <h3 className=" text-rose-500 text-3xl py-1 pt-5 font-mono font-bold">PORTFOLIO</h3>
               <p className=" text-lg py-2 leading-8  dark:text-white">
                 Welcome to my digital gallery! Explore a curated collection showcasing the seamless blend of design and technology that fuels my passion. Each project is a testament to my dedication to creating visually stunning designs and seamless user experiences. Join me on this visual journey through my portfolio, a testament to my love for design and technology!{" "}
               </p>
             </div>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-              <div className="basis-1/3 flex-1">
-                <div className="rounded-lg">
-                  <Image
-                    width={100}
-                    height={100}
-                    layout="responsive"
-                    src={web1}
-                    alt="Project 1 Description"
-                  />
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
+              {/* Portfolio Items */}
+              <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
+                <Image
+                  src={web1}
+                  width={400}
+                  height={300}
+                  layout="responsive"
+                  alt="Project 1 Description"
+                />
               </div>
-              <div className="basis-1/3 flex-1">
-                <div className="rounded-lg">
-                  <Image
-                    width={100}
-                    height={100}
-                    layout="responsive"
-                    src={web2}
-                    alt="Project 2 Description"
-                  />
-                </div>
+              <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
+                <Image
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                  src={web2}
+                  alt="Project 2 Description"
+                />
               </div>
-              <div className="basis-1/3 flex-1">
-                <div className="rounded-lg">
-                  <Image
+              <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
+              <Image
                     width={100}
                     height={100}
                     layout="responsive"
                     src={web3}
                     alt="Project 3 Description"
                   />
-                </div>
               </div>
-              <div className="basis-1/3 flex-1">
-                <div className="rounded-lg">
-                  <Image
+              <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
+              <Image
                     width={100}
                     height={100}
                     layout="responsive"
                     src={web4}
                     alt="Project 4 Description"
                   />
-                </div>
               </div>
-              <div className="basis-1/3 flex-1">
-                <div className="rounded-lg">
-                  <Image
+              <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
+              <Image
                     width={100}
                     height={100}
                     layout="responsive"
                     src={web5}
                     alt="Project 5 Description"
                   />
-                </div>
               </div>
-              <div className="basis-1/3 flex-1">
-                <div className="rounded-lg">
-                  <Image
+              <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
+              <Image
                     width={100}
                     height={100}
                     layout="responsive"
                     src={web6}
                     alt="Project 6 Description"
                   />
-                </div>
               </div>
             </div>
           </section>
