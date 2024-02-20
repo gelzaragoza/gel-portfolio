@@ -50,7 +50,7 @@ export default function Home() {
         <div className="px-10 md:px-20 lg:px-20">
           <section className=" min-h-screen m">
             <nav className="py-10 flex justify-between items-center">
-              <h1 className="text-lg font-mono text-rose-600">gelzaragoza</h1>
+              <h1 className="text-sm font-mono text-rose-600">gelzaragoza</h1>
               <div className="flex items-center justify-between gap-5 md:justify-start">
                 <div className="flex items-center gap-3">
                 <button
