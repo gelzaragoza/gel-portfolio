@@ -6,6 +6,7 @@ import {
   AiFillTwitterCircle,
   AiFillGithub,
   AiOutlineMail,
+  AiFillFacebook,
 } from "react-icons/ai";
 import Image from "next/image";
 import gelyace from "../public/gel-notion2.svg";
@@ -23,11 +24,11 @@ import ChatBot from "./ChatBot";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
-  
+
 
   return (
     <div className={darkMode ? "dark" : ""}>
-     <Head>
+      <Head>
         <title>Angelica Zaragoza - Web Designer & Digital Marketer</title>
         <meta name="description" content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences." />
         <link rel="icon" href="/favicon.ico" />
@@ -48,26 +49,53 @@ export default function Home() {
       <main className=" bg-white dark:bg-black">
         <div className="px-10 md:px-20 lg:px-20">
           <section className=" min-h-screen m">
-          <nav className="py-10 flex justify-between items-center">
-            <h1 className="text-lg font-mono text-rose-500">gelzaragoza</h1>
-            <div className="flex items-center gap-5">
-              <button
-                onClick={() => setDarkMode(!darkMode)}
-                className="text-lg text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white focus:outline-none"
-              >
-                <BsFillMoonStarsFill />
-              </button>
-              <a
-                href="https://drive.google.com/file/d/11ZNdkU5arm7eL8159Pf6jCdiOi5Ii6Nn/view"
-                target="_blank"
-                rel="noopener noreferrer"
-                download="AngelicaResume.pdf"
-                className="text-lg font-semibold text-white bg-rose-500 hover:bg-rose-400 px-4 py-2 rounded-md"
-              >
-                Resume
-              </a>
-            </div>
-          </nav>
+            <nav className="py-10 flex justify-between items-center">
+              <h1 className="text-lg font-mono text-rose-500">gelzaragoza</h1>
+              <div className="flex items-center gap-5">
+                <button
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="text-lg text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white focus:outline-none"
+                >
+                  <BsFillMoonStarsFill />
+                </button>
+                <a
+                  href="https://drive.google.com/file/d/1i4cXEKxhq9K4YGIJJbd4l71mGzJ94EI3/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="AngelicaResume.pdf"
+                  className="text-rose-600 px-6 py-3 rounded-md font-semibold hover:text-white transition-colors duration-300"
+                >
+                  Resume
+                </a>
+                <div className="flex gap-3">
+                  <a
+                    href="https://twitter.com/gelzaragoza"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white"
+                  >
+                    <AiFillTwitterCircle className="text-2xl" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/angelica-zaragoza/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white"
+                  >
+                    <AiFillLinkedin className="text-2xl" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/zaragozagel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white"
+                  >
+                    <AiFillFacebook className="text-2xl" />
+                  </a>
+                  {/* Add more social media icons here */}
+                </div>
+              </div>
+            </nav>
 
             <div className="text-center p-10">
               <div className="relative bg-transparent rounded-full dark:bg-white mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
@@ -92,7 +120,8 @@ export default function Home() {
                 Digital Marketer who aspires to continuously learn software and design
                 tools to enhance the web&lsquo;s usability one page at a time.
               </p>
-              <p className="py-5">Dive into my tech journey below! </p>
+              <p className="text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
+                Dive into my tech journey below! </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 dark:text-rose-600">
               <div className="text-5xl flex justify-center gap-16 py-3 dark:text-rose-600">
@@ -191,7 +220,7 @@ export default function Home() {
                   give you tips and tricks to level it up.
                 </p>
                 <div className="flex flex-wrap justify-center">
-                <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
                     Meta Business Suite
                   </span>
                   <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
@@ -228,7 +257,7 @@ export default function Home() {
                   make it a reality.
                 </p>
                 <div className="flex flex-wrap justify-center">
-                <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
                     React
                   </span>
                   <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
@@ -260,9 +289,9 @@ export default function Home() {
             </div>
           </section>
           <section className="py-20">
-          <div>
-              <h3 className=" text-rose-500 text-3xl py-1 pt-5 font-mono font-bold">PORTFOLIO</h3>
-              <p className=" text-lg py-2 leading-8  dark:text-white">
+            <div>
+              <h3 className="text-rose-500 text-3xl py-1 pt-5 font-mono font-bold">PORTFOLIO</h3>
+              <p className="text-lg py-2 leading-8 dark:text-white">
                 Welcome to my digital gallery! Explore a curated collection showcasing the seamless blend of design and technology that fuels my passion. Each project is a testament to my dedication to creating visually stunning designs and seamless user experiences. Join me on this visual journey through my portfolio, a testament to my love for design and technology!{" "}
               </p>
             </div>
@@ -287,41 +316,49 @@ export default function Home() {
                 />
               </div>
               <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
-              <Image
-                    width={100}
-                    height={100}
-                    layout="responsive"
-                    src={web3}
-                    alt="Project 3 Description"
-                  />
+                <Image
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                  src={web3}
+                  alt="Project 3 Description"
+                />
               </div>
               <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
-              <Image
-                    width={100}
-                    height={100}
-                    layout="responsive"
-                    src={web4}
-                    alt="Project 4 Description"
-                  />
+                <Image
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                  src={web4}
+                  alt="Project 4 Description"
+                />
               </div>
               <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
-              <Image
-                    width={100}
-                    height={100}
-                    layout="responsive"
-                    src={web5}
-                    alt="Project 5 Description"
-                  />
+                <Image
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                  src={web5}
+                  alt="Project 5 Description"
+                />
               </div>
               <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
-              <Image
-                    width={100}
-                    height={100}
-                    layout="responsive"
-                    src={web6}
-                    alt="Project 6 Description"
-                  />
+                <Image
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                  src={web6}
+                  alt="Project 6 Description"
+                />
               </div>
+            </div>
+            <div className="text-center mt-10">
+              <a
+                href="https://drive.google.com/file/d/1ReJTCr6PNa2G3OkwQMjPtQ07BUCHDPqN/view"
+                className="border border-rose-600 text-rose-600 px-6 py-3 rounded-md font-semibold hover:bg-rose-600 hover:text-white transition-colors duration-300"
+              >
+                See Portfolio
+              </a>
             </div>
           </section>
         </div>
