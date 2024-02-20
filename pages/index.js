@@ -74,7 +74,7 @@ export default function Home() {
                   src={gelyace}
                   layout="fill"
                   objectFit="cover"
-                  alt="Angelica Zaragoza Portrait"
+                  alt="Angelica Zaragoza"
                 />
               </div>
               <h2 className="text-5xl py-2 dark:text-white font-medium md:text-6xl">
