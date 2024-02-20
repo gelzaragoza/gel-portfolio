@@ -50,26 +50,26 @@ export default function Home() {
         <div className="px-10 md:px-20 lg:px-20">
           <section className=" min-h-screen m">
             <nav className="py-10 flex justify-between items-center">
-              <h1 className="text-sm font-mono text-rose-600">gelzaragoza</h1>
+              <h1 className="text-lg font-mono text-rose-600">gelzaragoza</h1>
               <div className="flex items-center justify-between gap-5 md:justify-start">
                 <div className="flex items-center gap-3">
-                <button
+                  <button
                     onClick={() => setDarkMode(!darkMode)}
                     className="text-lg text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white focus:outline-none"
                   >
                     <BsFillMoonStarsFill />
                   </button>
-                    <a
+                  <a
                     href="https://drive.google.com/file/d/1i4cXEKxhq9K4YGIJJbd4l71mGzJ94EI3/view"
                     target="_blank"
                     rel="noopener noreferrer"
                     download="AngelicaResume.pdf"
                     className="text-rose-600 px-2 py-1 md:px-4 md:py-2 rounded-md font-semibold hover:text-white transition-colors duration-300"
-                    >
-                      Resume
-                    </a>
+                  >
+                    Resume
+                  </a>
                 </div>
-                
+
               </div>
             </nav>
 
@@ -99,14 +99,14 @@ export default function Home() {
               <p className="text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
                 Dive into my tech journey below! </p>
             </div>
-            <div className="flex justify-center gap-16 py-3 dark:text-rose-600">
+            <div className="flex justify-center gap-8 py-3 dark:text-rose-600">
               <a
                 href="https://twitter.com/gelzaragoza"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-red-500"
               >
-                <AiFillTwitterCircle className="text-5xl" />
+                <AiFillTwitterCircle className="text-3xl md:text-4xl lg:text-5xl" />
               </a>
               <a
                 href="https://www.linkedin.com/in/angelica-zaragoza/"
@@ -114,7 +114,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="hover:text-red-500"
               >
-                <AiFillLinkedin className="text-5xl" />
+                <AiFillLinkedin className="text-3xl md:text-4xl lg:text-5xl" />
               </a>
               <a
                 href="https://github.com/gelzaragoza"
@@ -122,7 +122,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="hover:text-red-500"
               >
-                <AiFillGithub className="text-5xl" />
+                <AiFillGithub className="text-3xl md:text-4xl lg:text-5xl" />
               </a>
               <a
                 href="https://facebook.com/zaragozagel"
@@ -130,7 +130,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="hover:text-red-500"
               >
-                <AiFillFacebook className="text-5xl" />
+                <AiFillFacebook className="text-3xl md:text-4xl lg:text-5xl" />
               </a>
             </div>
           </section>
