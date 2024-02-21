@@ -20,6 +20,8 @@ import web4 from "../public/iTeach.png";
 import web5 from "../public/Home.svg";
 import web6 from "../public/hatchitlol.png";
 import ChatBot from "./ChatBot";
+import NavigationMenu from "./NavigationMenu"; 
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -48,31 +50,8 @@ export default function Home() {
 
       <main className=" bg-white dark:bg-black">
         <div className="px-10 md:px-20 lg:px-20">
+        <NavigationMenu darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className=" min-h-screen m">
-            <nav className="py-10 flex justify-between items-center">
-              <h1 className="text-lg font-mono text-rose-600">gelzaragoza</h1>
-              <div className="flex items-center justify-between gap-5 md:justify-start">
-                <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="text-lg text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white focus:outline-none"
-                  >
-                    <BsFillMoonStarsFill />
-                  </button>
-                  <a
-                    href="https://drive.google.com/file/d/1i4cXEKxhq9K4YGIJJbd4l71mGzJ94EI3/view"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download="AngelicaResume.pdf"
-                    className="text-rose-600 px-2 py-1 md:px-4 md:py-2 rounded-md font-semibold hover:text-white transition-colors duration-300"
-                  >
-                    Resume
-                  </a>
-                </div>
-
-              </div>
-            </nav>
-
             <div className="text-center p-10">
               <div className="relative bg-transparent rounded-full dark:bg-white mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
                 <Image
@@ -136,10 +115,10 @@ export default function Home() {
           </section>
           <section>
             <div>
-              <h3 className=" text-rose-500 text-3xl py-1 pt-5 font-mono font-bold">
+              <h3 className=" text-rose-500 text-2xl py-1 pt-5 font-mono font-bold">
                 SERVICES I OFFER
               </h3>
-              <p className=" text-lg py-2 leading-8  dark:text-white">
+              <p className=" text-md py-2 leading-8  dark:text-white">
                 Throughout my journey in the tech industry, I have honed the
                 skills to provide professional services for agencies and
                 startups that encompass compelling design, seamless web
@@ -183,6 +162,9 @@ export default function Home() {
                   </span>
                   <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
                     Figma
+                  </span>
+                  <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
+                    Wordpress
                   </span>
                 </div>
               </div>
@@ -273,8 +255,8 @@ export default function Home() {
           </section>
           <section className="py-20">
             <div>
-              <h3 className="text-rose-500 text-3xl py-1 pt-5 font-mono font-bold">PORTFOLIO</h3>
-              <p className="text-lg py-2 leading-8 dark:text-white">
+              <h3 className="text-rose-500 text-2xl py-1 pt-5 font-mono font-bold">PORTFOLIO</h3>
+              <p className="text-md py-2 leading-8 dark:text-white">
                 Welcome to my digital gallery! Explore a curated collection showcasing the seamless blend of design and technology that fuels my passion. Each project is a testament to my dedication to creating visually stunning designs and seamless user experiences. Join me on this visual journey through my portfolio, a testament to my love for design and technology!{" "}
               </p>
             </div>
