@@ -28,12 +28,21 @@ module.exports = {
           "100%": {
             borderColor: "black"
           }  
+        },
+        snow: {
+          "0%": {
+            transform: "translateY(-200%)"
+          },
+          "100%": {
+            transform: "translateY(200%)"
+          }
         }
       },
       animation: {
-        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
+        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
+        snow: "snow linear infinite"
       }
     },
   },
   plugins: [],
-}
+};

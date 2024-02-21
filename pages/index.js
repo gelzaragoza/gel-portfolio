@@ -23,6 +23,7 @@ import ChatBot from "./ChatBot";
 import NavigationMenu from "./NavigationMenu";
 
 
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -50,10 +51,26 @@ export default function Home() {
 
       <main className=" bg-white dark:bg-black">
         <div className="px-10 md:px-20 lg:px-20">
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+          {[...Array(50)].map((_, i) => (
+            <div
+              key={i}
+              className={`absolute bg-dark dark:bg-white rounded-full animate-snow hover:scale-105`}
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                width: `${Math.random() * 4 + 2}px`,
+                height: `${Math.random() * 4 + 2}px`,
+                animationDuration: `${Math.random() * 3 + 2}s`,
+                animationDelay: `${Math.random() * 5}s`,
+              }}
+            ></div>
+          ))}
+        </div>
           <NavigationMenu darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className=" min-h-screen m">
             <div className="text-center p-10">
-              <div className="relative bg-transparent rounded-full dark:bg-white mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
+              <div className="relative bg-transparent rounded-full  dark:bg-white mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
                 <Image
                   src={gelyace}
                   layout="fill"
@@ -64,14 +81,14 @@ export default function Home() {
               <h2 className="text-5xl py-2 dark:text-white font-medium md:text-6xl">
                 Angelica Zaragoza
               </h2>
-              <h3 className="text-2xl text-rose-600 py-2 md:text-3xl relative">
-                Web Designer & Digital Marketer{" "}
-                <span role="img" aria-label="wave">
-                    👋
+              <h3 className="text-2xl md:text-3xl text-rose-600 font-semibold py-2 relative">
+                  Web Designer & Digital Marketer{" "}
+                  <span role="img" aria-label="wave">
+                      👋
                   </span>
-                <span className="absolute right-0 top-0 h-full bg-white w-0 animate-typing"></span>
-                <span className="absolute right-0 top-0 h-full flex items-center justify-center pr-2">
-                </span>
+                  <span className="absolute top-0 right-0 h-full bg-white w-0 dark:bg-black animate-typing"></span>
+                  <span className="absolute top-0 right-0 h-full flex items-center justify-center pr-2">
+                  </span>
               </h3>
               <p className="text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
                 Hello world! I&lsquo;m Gel, a passionate Web Designer and
