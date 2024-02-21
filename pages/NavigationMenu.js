@@ -18,7 +18,7 @@ const NavigationMenu = ({ darkMode, setDarkMode }) => {
         <div className="flex items-center gap-2">
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="text-lg text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white focus:outline-none transition duration-300"
+            className="text-lg text-black dark:text-white hover:text-gray-300 dark:hover:text-white focus:outline-none transition duration-300"
           >
             <BsFillMoonStarsFill />
           </button>

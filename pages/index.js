@@ -98,7 +98,7 @@ export default function Home() {
               <p className="text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
                 Dive into my tech journey below! </p>
             </div>
-            <div className="flex justify-center gap-8 py-3 dark:text-rose-600">
+            <div className="flex justify-center gap-8 py-3 dark:text-rose-500">
               <a
                 href="https://twitter.com/gelzaragoza"
                 target="_blank"
