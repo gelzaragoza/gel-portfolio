@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const NavigationMenu = ({ darkMode, setDarkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +37,7 @@ const NavigationMenu = ({ darkMode, setDarkMode }) => {
             onClick={toggleMenu}
             className="text-lg text-black dark:text-gray-300 hover:text-gray-300 dark:hover:text-white focus:outline-none transition duration-300"
           >
-            <AiOutlineMenu />
+            {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </button>
         </div>
       </div>

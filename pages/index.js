@@ -20,7 +20,7 @@ import web4 from "../public/iTeach.png";
 import web5 from "../public/Home.svg";
 import web6 from "../public/hatchitlol.png";
 import ChatBot from "./ChatBot";
-import NavigationMenu from "./NavigationMenu"; 
+import NavigationMenu from "./NavigationMenu";
 
 
 export default function Home() {
@@ -50,7 +50,7 @@ export default function Home() {
 
       <main className=" bg-white dark:bg-black">
         <div className="px-10 md:px-20 lg:px-20">
-        <NavigationMenu darkMode={darkMode} setDarkMode={setDarkMode} />
+          <NavigationMenu darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className=" min-h-screen m">
             <div className="text-center p-10">
               <div className="relative bg-transparent rounded-full dark:bg-white mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">
@@ -64,10 +64,13 @@ export default function Home() {
               <h2 className="text-5xl py-2 dark:text-white font-medium md:text-6xl">
                 Angelica Zaragoza
               </h2>
-              <h3 className="text-2xl text-rose-600 py-2 md:text-3xl">
+              <h3 className="text-2xl text-rose-600 py-2 md:text-3xl relative">
                 Web Designer & Digital Marketer{" "}
                 <span role="img" aria-label="wave">
-                  👋
+                    👋
+                  </span>
+                <span className="absolute right-0 top-0 h-full bg-white w-0 animate-typing"></span>
+                <span className="absolute right-0 top-0 h-full flex items-center justify-center pr-2">
                 </span>
               </h3>
               <p className="text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
