@@ -23,7 +23,7 @@ const NavigationMenu = ({ darkMode, setDarkMode }) => {
             <BsFillMoonStarsFill />
           </button>
           <a
-            href="https://drive.google.com/file/d/1LGl-rCGpRgSglph3d2Xq2FDqoIXSB1qy/view"
+            href="https://drive.google.com/file/d/13c05qrNdjCBXko6Z7nMIeYy7Nj9SoR5T/view"
             target="_blank"
             rel="noopener noreferrer"
             download="AngelicaResume.pdf"
@@ -46,7 +46,7 @@ const NavigationMenu = ({ darkMode, setDarkMode }) => {
           <ul className="py-4 px-8">
             <li>
               <a
-                href="https://drive.google.com/file/d/1LGl-rCGpRgSglph3d2Xq2FDqoIXSB1qy/view"
+                href="https://drive.google.com/file/d/13c05qrNdjCBXko6Z7nMIeYy7Nj9SoR5T/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="AngelicaResume2024.pdf"

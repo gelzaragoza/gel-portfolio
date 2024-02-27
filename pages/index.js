@@ -340,22 +340,13 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="text-center mt-10 relative">
-              <a
-                href="https://drive.google.com/file/d/1ReJTCr6PNa2G3OkwQMjPtQ07BUCHDPqN/view"
-                className="border border-rose-600 text-rose-600 px-6 py-3 rounded-md font-semibold hover:bg-rose-600 hover:text-white transition-colors duration-300 inline-block"
-              >
-                See Portfolio
-              </a>
-            </div>
           </section>
         </div>
         <section className="bg-rose-500 text-white py-10">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-semibold mb-4">Wanna work with me?</h2>
             <p className="text-lg">
-              Feel free to contact me for any inquiries or collaborations.
-            </p>
+            My portfolio contains some of my work - but not all. Get in touch with me and schedule an interview to learn about my experience, skills, - and more specifically: what I can do for your company.             </p>
             <div className="flex flex-wrap justify-center gap-4 pt-4">
               <a
                 href="mailto:mangelicazaragoza@gmail.com"
