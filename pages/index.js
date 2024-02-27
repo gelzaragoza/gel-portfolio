@@ -51,7 +51,7 @@ export default function Home() {
         ></script>
       </Head>
 
-      <main className=" bg-white dark:bg-black">
+      <main className="bg-white dark:bg-black overflow-y-auto scrollbar-thin scrollbar-thumb-rose-500 scrollbar-track-gray-100 dark:scrollbar-track-gray-800">
         <div className="px-10 md:px-20 lg:px-20">
           <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
             {[...Array(50)].map((_, i) => (
