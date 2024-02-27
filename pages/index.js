@@ -32,24 +32,23 @@ export default function Home() {
       <Head>
         <title>Angelica Zaragoza - Web Designer & Digital Marketer</title>
         <meta name="description" content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences." />
-        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="web design, digital marketing, web development, UI/UX, graphic design" />
         <meta name="author" content="Angelica Zaragoza" />
         <meta property="og:title" content="Angelica Zaragoza - Web Designer & Digital Marketer" />
         <meta property="og:description" content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences." />
         <meta property="og:image" content="/gel-notion2.svg" />
-        <meta property="og:url" content="https://www.example.com" />
+        <meta property="og:url" content="https://gelzaragoza.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@gelzaragoza" />
         <meta name="twitter:title" content="Angelica Zaragoza - Web Designer & Digital Marketer" />
         <meta name="twitter:description" content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences." />
-        <meta name="twitter:image" content="/gel-notion2.svg" />
+        <meta name="twitter:image" content="/gel-notion2.svg"/>
+        <meta name="twitter:url" content="https://gelzaragoza.vercel.app/" />
         <script
           src="https://api.minymon.com/minymon.js"
           defer
-          type="text/javascript">
-        </script>
+          type="text/javascript"
+        ></script>
       </Head>
 
       <main className=" bg-white dark:bg-black">
