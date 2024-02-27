@@ -345,9 +345,9 @@ export default function Home() {
         <section className="bg-rose-500 text-white py-10">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-semibold mb-4">Wanna work with me?</h2>
-            <p className="text-lg">
-            My portfolio contains some of my work - but not all. Get in touch with me and schedule an interview to learn about my experience, skills, - and more specifically: what I can do for your company.             </p>
-            <div className="flex flex-wrap justify-center gap-4 pt-4">
+            <p className="text-md">
+              My portfolio showcases some of my work, but not all. Get in touch with me to schedule an interview and learn how my experience and skills can contribute to your company.    </p>        
+              <div className="flex flex-wrap justify-center gap-4 pt-4">
               <a
                 href="mailto:mangelicazaragoza@gmail.com"
                 className="inline-block px-6 py-3 bg-white text-rose-500 rounded-md hover:bg-rose-400 hover:text-white font-semibold"
