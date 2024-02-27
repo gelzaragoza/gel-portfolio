@@ -10,16 +10,16 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import gelyace from "../public/gel-notion2.svg";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
+import design1 from "../public/design1.png";
+import code1 from "../public/code1.png";
+import consulting1 from "../public/consulting1.png";
 import web1 from "../public/orderly2.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/sstep.png";
 import web4 from "../public/iTeach.png";
 import web5 from "../public/Home.svg";
 import web6 from "../public/hatchitlol.png";
-import ChatBot from "./ChatBot";
+import MinymonComponent from "./MinymonComponent";
 import NavigationMenu from "./NavigationMenu";
 
 
@@ -47,26 +47,31 @@ export default function Home() {
         <meta name="twitter:title" content="Angelica Zaragoza - Web Designer & Digital Marketer" />
         <meta name="twitter:description" content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences." />
         <meta name="twitter:image" content="/gel-notion2.svg" />
+        <script
+          src="https://api.minymon.com/minymon.js"
+          defer
+          type="text/javascript">
+        </script>
       </Head>
 
       <main className=" bg-white dark:bg-black">
         <div className="px-10 md:px-20 lg:px-20">
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
-          {[...Array(50)].map((_, i) => (
-            <div
-              key={i}
-              className={`absolute bg-dark dark:bg-white rounded-full animate-snow hover:scale-105`}
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                width: `${Math.random() * 4 + 2}px`,
-                height: `${Math.random() * 4 + 2}px`,
-                animationDuration: `${Math.random() * 3 + 2}s`,
-                animationDelay: `${Math.random() * 5}s`,
-              }}
-            ></div>
-          ))}
-        </div>
+          <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+            {[...Array(50)].map((_, i) => (
+              <div
+                key={i}
+                className={`absolute bg-dark dark:bg-white rounded-full animate-snow hover:scale-105`}
+                style={{
+                  top: `${Math.random() * 100}%`,
+                  left: `${Math.random() * 100}%`,
+                  width: `${Math.random() * 4 + 2}px`,
+                  height: `${Math.random() * 4 + 2}px`,
+                  animationDuration: `${Math.random() * 3 + 2}s`,
+                  animationDelay: `${Math.random() * 5}s`,
+                }}
+              ></div>
+            ))}
+          </div>
           <NavigationMenu darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className=" min-h-screen m">
             <div className="text-center p-10">
@@ -82,13 +87,13 @@ export default function Home() {
                 Angelica Zaragoza
               </h2>
               <h3 className="text-2xl md:text-3xl text-rose-600 font-semibold py-2 relative">
-                  Web Designer & Digital Marketer{" "}
-                  <span role="img" aria-label="wave">
-                      👋
-                  </span>
-                  <span className="absolute top-0 right-0 h-full bg-white w-0 dark:bg-black animate-typing"></span>
-                  <span className="absolute top-0 right-0 h-full flex items-center justify-center pr-2">
-                  </span>
+                Web Designer & Digital Marketer{" "}
+                <span role="img" aria-label="wave">
+                  👋
+                </span>
+                <span className="absolute top-0 right-0 h-full bg-white w-0 dark:bg-black animate-typing"></span>
+                <span className="absolute top-0 right-0 h-full flex items-center justify-center pr-2">
+                </span>
               </h3>
               <p className="text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
                 Hello world! I&lsquo;m Gel, a passionate Web Designer and
@@ -135,7 +140,7 @@ export default function Home() {
           </section>
           <section>
             <div>
-              <h3 className=" text-rose-500 text-2xl py-1 pt-5 font-mono font-bold">
+              <h3 className=" text-rose-500 text-2xl py-1 pt-5 font-bold">
                 SERVICES I OFFER
               </h3>
               <p className=" text-md py-2 leading-8  dark:text-white">
@@ -152,9 +157,9 @@ export default function Home() {
               <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
                 <div className="flex justify-center">
                   <Image
-                    src={design}
-                    width={100}
-                    height={100}
+                    src={design1}
+                    width={200}
+                    height={200}
                     alt="Design Image Description"
                   />
                 </div>
@@ -191,9 +196,9 @@ export default function Home() {
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                 <div className="flex justify-center">
                   <Image
-                    src={consulting}
-                    width={100}
-                    height={100}
+                    src={consulting1}
+                    width={200}
+                    height={200}
                     alt="Consulting Image Description"
                   />
                 </div>
@@ -228,9 +233,9 @@ export default function Home() {
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                 <div className="flex justify-center">
                   <Image
-                    src={code}
-                    width={100}
-                    height={100}
+                    src={code1}
+                    width={200}
+                    height={200}
                     alt="Code Image Description"
                   />
                 </div>
@@ -273,15 +278,14 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="py-20">
+          <section className="py-20 relative">
             <div>
-              <h3 className="text-rose-500 text-2xl py-1 pt-5 font-mono font-bold">PORTFOLIO</h3>
+              <h3 className="text-rose-500 text-2xl py-1 pt-5 font-bold">PORTFOLIO</h3>
               <p className="text-md py-2 leading-8 dark:text-white">
                 Welcome to my digital gallery! Explore a curated collection showcasing the seamless blend of design and technology that fuels my passion. Each project is a testament to my dedication to creating visually stunning designs and seamless user experiences. Join me on this visual journey through my portfolio, a testament to my love for design and technology!{" "}
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
-              {/* Portfolio Items */}
               <div className="rounded-lg bg-white dark:bg-gray-800 overflow-hidden shadow-lg">
                 <Image
                   src={web1}
@@ -337,10 +341,10 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="text-center mt-10">
+            <div className="text-center mt-10 relative">
               <a
                 href="https://drive.google.com/file/d/1ReJTCr6PNa2G3OkwQMjPtQ07BUCHDPqN/view"
-                className="border border-rose-600 text-rose-600 px-6 py-3 rounded-md font-semibold hover:bg-rose-600 hover:text-white transition-colors duration-300"
+                className="border border-rose-600 text-rose-600 px-6 py-3 rounded-md font-semibold hover:bg-rose-600 hover:text-white transition-colors duration-300 inline-block"
               >
                 See Portfolio
               </a>
@@ -372,7 +376,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <ChatBot />
+        <MinymonComponent />
       </main>
     </div>
   );
