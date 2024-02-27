@@ -76,7 +76,6 @@ const NavigationMenu = ({ darkMode, setDarkMode }) => {
                 Blog
               </a>
             </li>
-            {/* Add more menu items as needed */}
           </ul>
         </div>
       )}
