@@ -23,7 +23,7 @@ const NavigationMenu = ({ darkMode, setDarkMode }) => {
             <BsFillMoonStarsFill />
           </button>
           <a
-            href="https://drive.google.com/file/d/1i4cXEKxhq9K4YGIJJbd4l71mGzJ94EI3/view"
+            href="https://drive.google.com/file/d/1LGl-rCGpRgSglph3d2Xq2FDqoIXSB1qy/view"
             target="_blank"
             rel="noopener noreferrer"
             download="AngelicaResume.pdf"
