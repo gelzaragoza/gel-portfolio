@@ -21,6 +21,8 @@ import web5 from "../public/Home.svg";
 import web6 from "../public/hatchitlol.png";
 import MinymonComponent from "./MinymonComponent";
 import NavigationMenu from "./NavigationMenu";
+import 'tailwind-scrollbar';
+
 
 
 
