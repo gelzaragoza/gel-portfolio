@@ -5,8 +5,8 @@ const ParticlesBackground = () => {
     const initializeParticles = async () => {
       if (typeof window !== "undefined") {
         try {
-          const particlesJS = (await import("particles.js")).default;
-          particlesJS("particles-js", {
+          const particlesJS = await import("particles.js/dist/particles.min.js");
+          particlesJS.default("particles-js", {
             particles: {
               number: {
                 value: 100,
