@@ -1,5 +1,5 @@
 import React from "react";
-import Particles from "react-tsparticles";
+import Particles from "@tsparticles/react";
 
 const ParticlesBackground = ({ darkMode }) => {
   return (
@@ -13,80 +13,117 @@ const ParticlesBackground = ({ darkMode }) => {
         options={{
           background: {
             color: {
-              value: darkMode ? "#000" : "#fff",
+              value: darkMode ? "#000000" : "#ffffff",
             },
           },
-          fpsLimit: 60,
+          particles: {
+            number: {
+              value: 80,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: darkMode ? "#ffffff" : "#000000",
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: darkMode ? "#000000" : "#ffffff",
+              },
+              polygon: {
+                nb_sides: 5,
+              },
+            },
+            opacity: {
+              value: 0.5,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false,
+              },
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 2,
+                size_min: 0.1,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable_auto: true,
+              distance: 150,
+              color: darkMode ? "#ffffff" : "#000000",
+              opacity: 0.4,
+              width: 1,
+              condensed_mode: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 600,
+              },
+            },
+            move: {
+              enable: true,
+              speed: 1,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200,
+              },
+            },
+          },
           interactivity: {
-            detectsOn: "canvas",
+            detect_on: "canvas",
             events: {
-              onClick: {
+              onhover: {
+                enable: true,
+                mode: "grab",
+              },
+              onclick: {
                 enable: true,
                 mode: "push",
-              },
-              onHover: {
-                enable: true,
-                mode: "repulse",
               },
               resize: true,
             },
             modes: {
+              grab: {
+                distance: 140,
+                line_linked: {
+                  opacity: 0.5,
+                },
+              },
               bubble: {
                 distance: 400,
-                duration: 2,
                 size: 40,
+                duration: 2,
                 opacity: 8,
-              },
-              push: {
-                particles_nb: 4,
+                speed: 3,
               },
               repulse: {
                 distance: 200,
                 duration: 0.4,
               },
-            },
-          },
-          particles: {
-            color: {
-              value: darkMode ? "#fff" : "#000",
-            },
-            links: {
-              color: darkMode ? "#fff" : "#000",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outMode: "bounce",
-              random: false,
-              speed: 2,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                value_area: 800,
+              push: {
+                particles_nb: 4,
               },
-              value: 80,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              random: true,
-              value: 5,
+              remove: {
+                particles_nb: 2,
+              },
             },
           },
-          detectRetina: true,
+          retina_detect: true,
         }}
       />
     </div>

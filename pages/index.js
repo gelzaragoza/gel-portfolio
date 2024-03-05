@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </section>
           <section>
-          <div>
+            <div>
               <h3 className=" text-rose-500 text-2xl py-1 pt-5 font-bold">
                 SERVICES I OFFER
               </h3>
