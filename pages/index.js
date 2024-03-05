@@ -151,14 +151,11 @@ export default function Home() {
             </div>
           </section>
           <section>
-            <div>
-              <h3 class="text-rose-500 text-2xl py-1 pt-5 font-bold">
+          <div>
+              <h3 className=" text-rose-500 text-2xl py-1 pt-5 font-bold">
                 SERVICES I OFFER
               </h3>
-              <p
-                class="text-md py-2 leading-8 dark:text-white"
-                style="text-align: justify;"
-              >
+              <p className=" text-md py-2 leading-8  dark:text-white">
                 Throughout my journey in the tech industry, I have honed the
                 skills to provide professional services for agencies and
                 startups that encompass compelling design, seamless web
@@ -295,20 +292,17 @@ export default function Home() {
             </div>
           </section>
           <section className="py-20 relative">
-            <div>
-              <h3 class="text-rose-500 text-2xl py-1 pt-5 font-bold">
+          <div>
+              <h3 className="text-rose-500 text-2xl py-1 pt-5 font-bold">
                 PORTFOLIO
               </h3>
-              <p
-                class="text-md py-2 leading-8 dark:text-white"
-                style="text-align: justify;"
-              >
+              <p className="text-md py-2 leading-8 dark:text-white">
                 Welcome to my digital gallery! Explore a curated collection
                 showcasing the seamless blend of design and technology that
                 fuels my passion. Each project is a testament to my dedication
                 to creating visually stunning designs and seamless user
                 experiences. Join me on this visual journey through my
-                portfolio, a testament to my love for design and technology!
+                portfolio, a testament to my love for design and technology!{" "}
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
