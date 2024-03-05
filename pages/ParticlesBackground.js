@@ -25,7 +25,7 @@ const ParticlesBackground = ({ darkMode }) => {
               },
             },
             color: {
-              value: darkMode ? "#ffffff" : "#7F7F7F",
+              value: darkMode ? "#ffffff" : "#FF1493", // Pink color scheme
             },
             shape: {
               type: "circle",
@@ -35,7 +35,7 @@ const ParticlesBackground = ({ darkMode }) => {
               },
             },
             opacity: {
-              value: 0.5,
+              value: 0.7, // Increased opacity for better visibility
               random: true,
               anim: {
                 enable: true,
