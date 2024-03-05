@@ -22,22 +22,3 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
-
-/* For light mode */
-.particles-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-/* For dark mode */
-.dark .particles-background {
-  background-color: black;
-}
-
-.dark .particles-background canvas {
-  opacity: 0.5; /* Adjust opacity for better visibility */
-}

@@ -22,12 +22,12 @@ import web6 from "../public/hatchitlol.png";
 import MinymonComponent from "./MinymonComponent";
 import NavigationMenu from "./NavigationMenu";
 import "tailwind-scrollbar";
-import ParticlesBackground from "./ParticlesBackground";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
+    
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Angelica Zaragoza - Web Designer & Digital Marketer</title>
@@ -65,10 +65,8 @@ export default function Home() {
           type="text/javascript"
         ></script>
       </Head>
-
       <main className="bg-white dark:bg-black overflow-y-auto scrollbar-thin scrollbar-thumb-rose-500 scrollbar-track-gray-100 dark:scrollbar-track-gray-800">
-      <ParticlesBackground darkMode={darkMode} />
-        <div className="px-10 md:px-20 lg:px-20">
+       <div className="px-10 md:px-20 lg:px-20">
           <NavigationMenu darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className=" min-h-screen m">
             <div className="text-center p-10">
