@@ -9,7 +9,7 @@ const ParticlesBackground = () => {
         particlesJS("particles-js", {
           particles: {
             number: {
-              value: 100,
+              value: 80,
               density: {
                 enable: true,
                 value_area: 800,
@@ -44,7 +44,7 @@ const ParticlesBackground = () => {
               },
             },
             size: {
-              value: 10,
+              value: 8,
               random: true,
               anim: {
                 enable: true,
@@ -59,7 +59,7 @@ const ParticlesBackground = () => {
             move: {
               enable: true,
               speed: 1,
-              direction: "bottom",
+              direction: "none",
               random: true,
               straight: false,
               out_mode: "out",
