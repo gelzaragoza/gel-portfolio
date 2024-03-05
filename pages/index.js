@@ -68,8 +68,8 @@ export default function Home() {
 
       <main className="bg-white dark:bg-black overflow-y-auto scrollbar-thin scrollbar-thumb-rose-500 scrollbar-track-gray-100 dark:scrollbar-track-gray-800">
         <div className="px-10 md:px-20 lg:px-20">
-        <ParticlesBackground />
           <NavigationMenu darkMode={darkMode} setDarkMode={setDarkMode} />
+          <ParticlesBackground darkMode={darkMode} />
           <section className=" min-h-screen m">
             <div className="text-center p-10">
               <div className="relative bg-transparent rounded-full  dark:bg-white mx-auto w-60 h-60 mb-10 md:w-96 md:h-96 overflow-hidden items-center max-w-full">

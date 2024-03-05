@@ -1,41 +1,46 @@
-import { useEffect } from 'react';
+import React from "react";
+import Particles from "react-tsparticles";
 
-const ParticlesBackground = () => {
-  useEffect(() => {
-    // Load Particles.js only in the client-side code
-    if (typeof window !== 'undefined') {
-      import('particles.js').then((particles) => {
-        particles.init({
-          // Configure Particle.js settings here
-          selector: '.particles-background',
-          color: '#000000',
-          connectParticles: true,
-          responsive: [
-            {
-              breakpoint: 768,
-              options: {
-                maxParticles: 200,
-              }
+const ParticlesBackground = ({ darkMode }) => {
+  return (
+    <div
+      className={`particles-background ${
+        darkMode ? "dark-particles-background" : ""
+      }`}
+    >
+      <Particles
+        id="tsparticles"
+        options={{
+          background: {
+            color: {
+              value: darkMode ? "#000000" : "#ffffff", // Set background color based on dark mode
             },
-            {
-              breakpoint: 425,
-              options: {
-                maxParticles: 100,
-              }
+          },
+          particles: {
+            number: {
+              value: 80,
             },
-            {
-              breakpoint: 320,
-              options: {
-                maxParticles: 50,
-              }
-            }
-          ]
-        });
-      });
-    }
-  }, []);
-
-  return <div className="particles-background" />;
+            color: {
+              value: "#ffffff",
+            },
+            shape: {
+              type: "circle",
+            },
+            opacity: {
+              value: 0.5,
+            },
+            size: {
+              value: 3,
+            },
+            move: {
+              enable: true,
+              speed: 2,
+            },
+          },
+        }}
+      />
+    </div>
+  );
 };
 
 export default ParticlesBackground;

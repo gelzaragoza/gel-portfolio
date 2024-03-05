@@ -10,22 +10,14 @@ function MyApp({ Component, pageProps }) {
     lottieScript.defer = true;
     document.body.appendChild(lottieScript);
 
-    // Load particles.js script
-    const particlesScript = document.createElement('script');
-    particlesScript.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
-    particlesScript.defer = true;
-    document.body.appendChild(particlesScript);
-
     return () => {
       document.body.removeChild(lottieScript);
-      document.body.removeChild(particlesScript);
     };
   }, []);
 
   return (
     <>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie_svg.min.js" strategy="afterInteractive" />
-      <Script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" strategy="afterInteractive" />
       <Component {...pageProps} />
     </>
   );

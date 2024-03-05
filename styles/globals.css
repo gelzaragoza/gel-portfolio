@@ -6,8 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -18,11 +17,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
 
+/* For light mode */
 .particles-background {
   position: absolute;
   top: 0;
@@ -32,3 +33,11 @@ a {
   z-index: -1;
 }
 
+/* For dark mode */
+.dark .particles-background {
+  background-color: black;
+}
+
+.dark .particles-background canvas {
+  opacity: 0.5; /* Adjust opacity for better visibility */
+}
