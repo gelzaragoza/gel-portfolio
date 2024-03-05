@@ -22,6 +22,7 @@ import web6 from "../public/hatchitlol.png";
 import MinymonComponent from "./MinymonComponent";
 import NavigationMenu from "./NavigationMenu";
 import "tailwind-scrollbar";
+import ParticlesBackground from "./ParticlesBackground";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -67,22 +68,7 @@ export default function Home() {
 
       <main className="bg-white dark:bg-black overflow-y-auto scrollbar-thin scrollbar-thumb-rose-500 scrollbar-track-gray-100 dark:scrollbar-track-gray-800">
         <div className="px-10 md:px-20 lg:px-20">
-          <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
-            {[...Array(50)].map((_, i) => (
-              <div
-                key={i}
-                className={`absolute bg-dark dark:bg-white rounded-full animate-snow hover:scale-105`}
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  width: `${Math.random() * 4 + 2}px`,
-                  height: `${Math.random() * 4 + 2}px`,
-                  animationDuration: `${Math.random() * 3 + 2}s`,
-                  animationDelay: `${Math.random() * 5}s`,
-                }}
-              ></div>
-            ))}
-          </div>
+        <ParticlesBackground />
           <NavigationMenu darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className=" min-h-screen m">
             <div className="text-center p-10">
