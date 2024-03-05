@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 
-const DynamicParticles = dynamic(() => import("particles.js"), { ssr: false });
-
 const ParticlesBackground = () => {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      DynamicParticles.then((particlesJS) => {
+    const initializeParticles = async () => {
+      if (typeof window !== "undefined") {
+        const particlesJS = await import("particles.js");
         particlesJS("particles-js", {
           particles: {
             number: {
@@ -86,11 +85,18 @@ const ParticlesBackground = () => {
           },
           retina_detect: true,
         });
-      });
-    }
+      }
+    };
+
+    initializeParticles();
   }, []);
 
-  return <div id="particles-js" className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0" />;
+  return (
+    <div
+      id="particles-js"
+      className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0"
+    />
+  );
 };
 
 export default ParticlesBackground;
