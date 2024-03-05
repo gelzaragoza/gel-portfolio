@@ -9,7 +9,7 @@ const ParticlesBackground = () => {
         particlesJS("particles-js", {
           particles: {
             number: {
-              value: 80,
+              value: 100,
               density: {
                 enable: true,
                 value_area: 800,
@@ -44,7 +44,7 @@ const ParticlesBackground = () => {
               },
             },
             size: {
-              value: 8,
+              value: 10,
               random: true,
               anim: {
                 enable: true,
@@ -59,7 +59,7 @@ const ParticlesBackground = () => {
             move: {
               enable: true,
               speed: 1,
-              direction: "none",
+              direction: "bottom",
               random: true,
               straight: false,
               out_mode: "out",
@@ -95,6 +95,7 @@ const ParticlesBackground = () => {
     <div
       id="particles-js"
       className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0"
+      style={{ zIndex: -1 }} // Adjusted z-index
     />
   );
 };
