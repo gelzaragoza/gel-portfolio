@@ -1,90 +1,93 @@
 import React, { useEffect } from "react";
-import dynamic from "next/dynamic";
 
 const ParticlesBackground = () => {
   useEffect(() => {
     const initializeParticles = async () => {
       if (typeof window !== "undefined") {
-        const particlesJS = await import("particles.js");
-        particlesJS("particles-js", {
-          particles: {
-            number: {
-              value: 100,
-              density: {
-                enable: true,
-                value_area: 800,
+        try {
+          const particlesJS = (await import("particles.js")).default;
+          particlesJS("particles-js", {
+            particles: {
+              number: {
+                value: 100,
+                density: {
+                  enable: true,
+                  value_area: 800,
+                },
               },
-            },
-            color: {
-              value: "#ffffff",
-            },
-            shape: {
-              type: "circle",
-              stroke: {
-                width: 0,
-                color: "#000000",
+              color: {
+                value: "#ffffff",
               },
-              polygon: {
-                nb_sides: 5,
+              shape: {
+                type: "circle",
+                stroke: {
+                  width: 0,
+                  color: "#000000",
+                },
+                polygon: {
+                  nb_sides: 5,
+                },
+                image: {
+                  src: "img/github.svg",
+                  width: 100,
+                  height: 100,
+                },
               },
-              image: {
-                src: "img/github.svg",
-                width: 100,
-                height: 100,
+              opacity: {
+                value: 0.5,
+                random: true,
+                anim: {
+                  enable: true,
+                  speed: 1,
+                  opacity_min: 0.1,
+                  sync: false,
+                },
               },
-            },
-            opacity: {
-              value: 0.5,
-              random: true,
-              anim: {
+              size: {
+                value: 10,
+                random: true,
+                anim: {
+                  enable: true,
+                  speed: 10,
+                  size_min: 0.1,
+                  sync: false,
+                },
+              },
+              line_linked: {
+                enable: false,
+              },
+              move: {
                 enable: true,
                 speed: 1,
-                opacity_min: 0.1,
-                sync: false,
+                direction: "bottom",
+                random: true,
+                straight: false,
+                out_mode: "out",
+                bounce: false,
+                attract: {
+                  enable: false,
+                  rotateX: 600,
+                  rotateY: 1200,
+                },
               },
             },
-            size: {
-              value: 10,
-              random: true,
-              anim: {
-                enable: true,
-                speed: 10,
-                size_min: 0.1,
-                sync: false,
+            interactivity: {
+              detect_on: "canvas",
+              events: {
+                onhover: {
+                  enable: false,
+                },
+                onclick: {
+                  enable: false,
+                },
+                resize: true,
               },
             },
-            line_linked: {
-              enable: false,
-            },
-            move: {
-              enable: true,
-              speed: 1,
-              direction: "bottom",
-              random: true,
-              straight: false,
-              out_mode: "out",
-              bounce: false,
-              attract: {
-                enable: false,
-                rotateX: 600,
-                rotateY: 1200,
-              },
-            },
-          },
-          interactivity: {
-            detect_on: "canvas",
-            events: {
-              onhover: {
-                enable: false,
-              },
-              onclick: {
-                enable: false,
-              },
-              resize: true,
-            },
-          },
-          retina_detect: true,
-        });
+            retina_detect: true,
+          });
+        } catch (error) {
+          console.error("Error initializing particles:", error);
+        }
       }
     };
 
@@ -95,7 +98,6 @@ const ParticlesBackground = () => {
     <div
       id="particles-js"
       className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0"
-      style={{ zIndex: -1 }} // Adjusted z-index
     />
   );
 };
