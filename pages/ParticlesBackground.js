@@ -1,100 +1,37 @@
-import React, { useEffect } from "react";
+import { useEffect } from 'react';
+import Particles from 'particles.js';
 
 const ParticlesBackground = () => {
   useEffect(() => {
-    const initializeParticles = async () => {
-      if (typeof window !== "undefined") {
-        try {
-          const particlesJS = await import("particles.js");
-          particlesJS("particles-js", {
-            particles: {
-              number: {
-                value: 100,
-                density: {
-                  enable: true,
-                  value_area: 800,
-                },
-              },
-              color: {
-                value: "#ffffff",
-              },
-              shape: {
-                type: "circle",
-                stroke: {
-                  width: 0,
-                  color: "#000000",
-                },
-                polygon: {
-                  nb_sides: 5,
-                },
-              },
-              opacity: {
-                value: 0.5,
-                random: true,
-                anim: {
-                  enable: true,
-                  speed: 1,
-                  opacity_min: 0.1,
-                  sync: false,
-                },
-              },
-              size: {
-                value: 10,
-                random: true,
-                anim: {
-                  enable: true,
-                  speed: 10,
-                  size_min: 0.1,
-                  sync: false,
-                },
-              },
-              line_linked: {
-                enable: false,
-              },
-              move: {
-                enable: true,
-                speed: 1,
-                direction: "bottom",
-                random: true,
-                straight: false,
-                out_mode: "out",
-                bounce: false,
-                attract: {
-                  enable: false,
-                  rotateX: 600,
-                  rotateY: 1200,
-                },
-              },
-            },
-            interactivity: {
-              detect_on: "canvas",
-              events: {
-                onhover: {
-                  enable: false,
-                },
-                onclick: {
-                  enable: false,
-                },
-                resize: true,
-              },
-            },
-            retina_detect: true,
-          });
-        } catch (error) {
-          console.error("Error initializing particles:", error);
+    Particles.init({
+      // Configure Particle.js settings here
+      selector: '.particles-background',
+      color: '#000000',
+      connectParticles: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          options: {
+            maxParticles: 200,
+          }
+        },
+        {
+          breakpoint: 425,
+          options: {
+            maxParticles: 100,
+          }
+        },
+        {
+          breakpoint: 320,
+          options: {
+            maxParticles: 50,
+          }
         }
-      }
-    };
-
-    initializeParticles();
+      ]
+    });
   }, []);
 
-  return (
-    <div
-      id="particles-js"
-      className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0"
-    />
-  );
+  return <div className="particles-background" />;
 };
 
 export default ParticlesBackground;
