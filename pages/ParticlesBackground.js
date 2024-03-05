@@ -5,8 +5,8 @@ const ParticlesBackground = () => {
     const initializeParticles = async () => {
       if (typeof window !== "undefined") {
         try {
-          const particlesJS = await import("particles.js/dist/particles.min.js");
-          particlesJS.default("particles-js", {
+          const particlesJS = await import("particles.js");
+          particlesJS("particles-js", {
             particles: {
               number: {
                 value: 100,
@@ -26,11 +26,6 @@ const ParticlesBackground = () => {
                 },
                 polygon: {
                   nb_sides: 5,
-                },
-                image: {
-                  src: "img/github.svg",
-                  width: 100,
-                  height: 100,
                 },
               },
               opacity: {
