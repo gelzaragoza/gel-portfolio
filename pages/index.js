@@ -15,7 +15,7 @@ import code1 from "../public/code1.png";
 import consulting1 from "../public/consulting1.png";
 import web1 from "../public/orderly2.png";
 import web2 from "../public/web2.png";
-import web3 from "../public/lura.png";
+import web3 from "../public/lurabeaute.png";
 import web4 from "../public/iTeach.png";
 import web5 from "../public/Home.svg";
 import web6 from "../public/hatchitlol.png";
