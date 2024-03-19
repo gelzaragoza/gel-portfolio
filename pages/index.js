@@ -15,49 +15,36 @@ import code1 from "../public/code1.png";
 import consulting1 from "../public/consulting1.png";
 import web1 from "../public/orderly2.png";
 import web2 from "../public/web2.png";
-import web3 from "../public/sstep.png";
+import web3 from "../public/Lura.png";
 import web4 from "../public/iTeach.png";
 import web5 from "../public/Home.svg";
 import web6 from "../public/hatchitlol.png";
 import MinymonComponent from "./MinymonComponent";
 import NavigationMenu from "./NavigationMenu";
-import "tailwind-scrollbar";
+import 'tailwind-scrollbar';
+
+
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Angelica Zaragoza - Web Designer & Digital Marketer</title>
-        <meta
-          name="description"
-          content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences."
-        />
+        <meta name="description" content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Angelica Zaragoza" />
-        <meta
-          property="og:title"
-          content="Angelica Zaragoza - Web Designer & Digital Marketer"
-        />
-        <meta
-          property="og:description"
-          content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences."
-        />
+        <meta property="og:title" content="Angelica Zaragoza - Web Designer & Digital Marketer" />
+        <meta property="og:description" content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences." />
         <meta property="og:image" content="/gel-notion2.svg" />
         <meta property="og:url" content="https://gelzaragoza.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@gelzaragoza" />
-        <meta
-          name="twitter:title"
-          content="Angelica Zaragoza - Web Designer & Digital Marketer"
-        />
-        <meta
-          name="twitter:description"
-          content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences."
-        />
-        <meta name="twitter:image" content="/gel-notion2.svg" />
+        <meta name="twitter:title" content="Angelica Zaragoza - Web Designer & Digital Marketer" />
+        <meta name="twitter:description" content="Passionate Web Designer and Digital Marketer creating visually stunning designs and seamless user experiences." />
+        <meta name="twitter:image" content="/gel-notion2.svg"/>
         <meta name="twitter:url" content="https://gelzaragoza.vercel.app/" />
         <script
           src="https://api.minymon.com/minymon.js"
@@ -65,8 +52,25 @@ export default function Home() {
           type="text/javascript"
         ></script>
       </Head>
+
       <main className="bg-white dark:bg-black overflow-y-auto scrollbar-thin scrollbar-thumb-rose-500 scrollbar-track-gray-100 dark:scrollbar-track-gray-800">
-       <div className="px-10 md:px-20 lg:px-20">
+        <div className="px-10 md:px-20 lg:px-20">
+          <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+            {[...Array(50)].map((_, i) => (
+              <div
+                key={i}
+                className={`absolute bg-dark dark:bg-white rounded-full animate-snow hover:scale-105`}
+                style={{
+                  top: `${Math.random() * 100}%`,
+                  left: `${Math.random() * 100}%`,
+                  width: `${Math.random() * 4 + 2}px`,
+                  height: `${Math.random() * 4 + 2}px`,
+                  animationDuration: `${Math.random() * 3 + 2}s`,
+                  animationDelay: `${Math.random() * 5}s`,
+                }}
+              ></div>
+            ))}
+          </div>
           <NavigationMenu darkMode={darkMode} setDarkMode={setDarkMode} />
           <section className=" min-h-screen m">
             <div className="text-center p-10">
@@ -87,17 +91,16 @@ export default function Home() {
                   👋
                 </span>
                 <span className="absolute top-0 right-0 h-full bg-white w-0 dark:bg-black animate-typing"></span>
-                <span className="absolute top-0 right-0 h-full flex items-center justify-center pr-2"></span>
+                <span className="absolute top-0 right-0 h-full flex items-center justify-center pr-2">
+                </span>
               </h3>
               <p className="text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
                 Hello world! I&lsquo;m Gel, a passionate Web Designer and
-                Digital Marketer who aspires to continuously learn software and
-                design tools to enhance the web&lsquo;s usability one page at a
-                time.
+                Digital Marketer who aspires to continuously learn software and design
+                tools to enhance the web&lsquo;s usability one page at a time.
               </p>
               <p className="text-md py-5 leading-8 dark:text-white md:text-xl max-w-xl mx-auto">
-                Dive into my tech journey below!{" "}
-              </p>
+                Dive into my tech journey below! </p>
             </div>
             <div className="flex justify-center gap-8 py-3 dark:text-rose-500">
               <a
@@ -139,7 +142,7 @@ export default function Home() {
               <h3 className=" text-rose-500 text-2xl py-1 pt-5 font-bold">
                 SERVICES I OFFER
               </h3>
-              <p className=" text-md py-2 leading-8  dark:text-white text-justify">
+              <p className=" text-md py-2 leading-8  dark:text-white">
                 Throughout my journey in the tech industry, I have honed the
                 skills to provide professional services for agencies and
                 startups that encompass compelling design, seamless web
@@ -163,8 +166,7 @@ export default function Home() {
                   Beautiful Designs
                 </h3>
                 <p className="py-2">
-                  Crafting seamless and elegant designs suited to meet your
-                  specific requirements, following core design principles.
+                  Crafting seamless and elegant designs suited to meet your specific requirements, following core design principles.
                 </p>
                 <div className="flex flex-wrap justify-center">
                   <span className="text-sm bg-gray-100  text-rose-600 dark:text-rose-600 px-3 py-1 rounded-full mr-2 mb-2">
@@ -277,16 +279,9 @@ export default function Home() {
           </section>
           <section className="py-20 relative">
             <div>
-              <h3 className="text-rose-500 text-2xl py-1 pt-5 font-bold">
-                PORTFOLIO
-              </h3>
-              <p className="text-md py-2 leading-8 dark:text-white text-justify">
-                Welcome to my digital gallery! Explore a curated collection
-                showcasing the seamless blend of design and technology that
-                fuels my passion. Each project is a testament to my dedication
-                to creating visually stunning designs and seamless user
-                experiences. Join me on this visual journey through my
-                portfolio, a testament to my love for design and technology!{" "}
+              <h3 className="text-rose-500 text-2xl py-1 pt-5 font-bold">PORTFOLIO</h3>
+              <p className="text-md py-2 leading-8 dark:text-white">
+                Welcome to my digital gallery! Explore a curated collection showcasing the seamless blend of design and technology that fuels my passion. Each project is a testament to my dedication to creating visually stunning designs and seamless user experiences. Join me on this visual journey through my portfolio, a testament to my love for design and technology!{" "}
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
@@ -349,13 +344,10 @@ export default function Home() {
         </div>
         <section className="bg-rose-500 text-white py-10">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-semibold mb-4">Get in Touch!</h2>
+            <h2 className="text-3xl font-semibold mb-4">Wanna work with me?</h2>
             <p className="text-md">
-              My portfolio showcases some of my work, but not all. Get in touch
-              with me to schedule an interview and learn how my experience and
-              skills can contribute to your company.{" "}
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 pt-4">
+              My portfolio showcases some of my work, but not all. Get in touch with me to schedule an interview and learn how my experience and skills can contribute to your company.    </p>        
+              <div className="flex flex-wrap justify-center gap-4 pt-4">
               <a
                 href="mailto:mangelicazaragoza@gmail.com"
                 className="inline-block px-6 py-3 bg-white text-rose-500 rounded-md hover:bg-rose-400 hover:text-white font-semibold"
